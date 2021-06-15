@@ -9,7 +9,8 @@ import pymongo
 app = Flask(__name__)
 api = Api(app)
 
-cluster = MongoClient("mongodb+srv://jonahChecketts:Shadow1234@cluster0.fhfqq.mongodb.net/<dbname>?retryWrites=true&w=majority")
+#delete the section that says <username> and <password> and replace it with your own username and password for your mongoDB
+cluster = MongoClient("mongodb+srv://<username>:<password>@cluster0.fhfqq.mongodb.net/<dbname>?retryWrites=true&w=majority")
 db = ''
 collection = ''
 
